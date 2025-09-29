@@ -1,10 +1,10 @@
-site_name: Scientific Machine Learning (SciML)
-site_author: Krishna Kumar
-site_description: Course materials for Scientific Machine Learning
-site_url: https://github.com/kks32-courses/sciml
-repo_url: https://github.com/kks32-courses/sciml
+site_name: Introduction to Control Systems
+site_author: Your Name
+site_description: Course materials for Introduction to Control Systems
+site_url: https://github.com/ajthor/lecture-notes
+repo_url: https://github.com/ajthor/lecture-notes
 use_directory_urls: false
-repo_name: SciML Course Repo
+repo_name: Controls Course
 
 theme:
   name: material
@@ -108,32 +108,8 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Multi-Layer Perceptron: 
-    - MLP: 00-mlp/mlp.ipynb
-    - Activation Function ReLU: 00-mlp/relu.md
-    - UAT: 
-      - UAT Proof: 00-mlp/uat-proof.md
-      - UAT ReLU demo: 00-mlp/uat.md
-    - Regularization: 00-mlp/regularization.md
-    - Automatic Differentiation: 00-mlp/ad.md
-    - Gradient Descent: 00-mlp/sgd.md
-  - Classification:
-    - Decision Tree: 00-mlp/00a-classification.ipynb
-    - MLP Classification: 00-mlp/00b-mlp-classification.ipynb
-    - Binary Cross Entropy: 00-mlp/bce.md
-  - PINNs:
-    - PINNs oscillator: 01-pinns/pinns.ipynb
-    - Soft vs Hard constraint: 01-pinns/poisson.ipynb
-    - Adaptive Weights: 01-pinns/adaptive-weights.ipynb
-    - Collocation: 01-pinns/collocation.ipynb
-    - Inverse analysis: 01-pinns/inverse-heat.ipynb
-    - Burgers: 01-pinns/burgers.ipynb
-    - Variational formulation: 01-pinns/linear-elastic-fixed.ipynb
-  - DeepONet:
-    - DeepONet: 02-deeponet/deeponet.ipynb
-    - PI-DeepONet: 02-deeponet/pideeponet.ipynb
-    - DeepONet Interpretation: 02-deeponet/deeponet-explanation.md
-    - DeepONet Batch Einsum: 02-deeponet/einsum.md
+  - Lectures:
+    - PID Controllers: docs/pid-controllers.ipynb
 
 copyright: |
   &copy; 2025 <a href="https://github.com/kks32-courses"  target="_blank" rel="noopener">Krishna Kumar</a>
