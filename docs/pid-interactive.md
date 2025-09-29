@@ -10,103 +10,18 @@
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-<!-- Tailwind CSS for styling -->
-<script src="https://cdn.tailwindcss.com"></script>
-
+<!-- Minimal scoped CSS for the PID widget only. Namespaced to avoid interfering with the site theme. -->
 <style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f8fafc;
-        line-height: 1.6;
-    }
-    
-    .markdown-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
-    }
-    
-    .react-widget-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-    }
-    
-    h1 {
-        color: #1e293b;
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        border-bottom: 3px solid #3b82f6;
-        padding-bottom: 0.5rem;
-    }
-    
-    h2 {
-        color: #334155;
-        font-size: 1.875rem;
-        font-weight: 600;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    
-    h3 {
-        color: #475569;
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-top: 1.5rem;
-        margin-bottom: 0.75rem;
-    }
-    
-    p {
-        color: #64748b;
-        margin-bottom: 1rem;
-        font-size: 1.1rem;
-    }
-    
-    .equation {
-        background-color: #f1f5f9;
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 1rem 0;
-        font-family: 'Courier New', monospace;
-        border-left: 4px solid #3b82f6;
-    }
-    
-    .highlight-box {
-        background-color: #eff6ff;
-        border: 1px solid #bfdbfe;
-        border-radius: 8px;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
-    }
-    
-    .highlight-box h3 {
-        color: #1e40af;
-        margin-top: 0;
-    }
-    
-    ul {
-        color: #64748b;
-        margin-left: 1.5rem;
-    }
-    
-    li {
-        margin-bottom: 0.5rem;
-    }
-    
-    .math {
-        font-family: 'Times New Roman', serif;
-        font-style: italic;
-    }
+  .pid-widget { max-width: 1100px; margin: 1rem auto; }
+  .pid-widget .widget { background: transparent; }
+  .pid-widget .equation { background:#f8fafc; padding:0.6rem; border-left:3px solid #3b82f6; border-radius:6px; font-family:monospace; }
+  .pid-widget .highlight-box { background:transparent; border-left:3px solid #e5e7eb; padding:0.8rem; border-radius:6px; }
+  .pid-widget canvas { width:100%; height:auto; display:block; }
+  /* keep only small layout helpers used by the widget; avoid colors/shadows that override theme */
+  .pid-widget .p-4{padding:1rem}
+  .pid-widget .p-6{padding:1.5rem}
+  .pid-widget .mt-6{margin-top:1.5rem}
+  .pid-widget .rounded-2xl{border-radius:12px}
 </style>
 </head>
 <body>
