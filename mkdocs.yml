@@ -110,6 +110,7 @@ nav:
   - Home: index.md
   - Lectures:
     - PID Controllers: pid-controllers.ipynb
+    - Interactive Demo: pid-interactive.md
 
 copyright: |
   &copy; 2025 <a href="https://github.com/ajthor"  target="_blank" rel="noopener">Adam Thorpe</a>
