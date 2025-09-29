@@ -109,7 +109,6 @@ extra_css:
 nav:
   - Home: index.md
   - Lectures:
-    - PID Controllers: pid-control-example.ipynb
     - PID Lecture: pid-lecture.ipynb
     - Interactive Demo: pid-interactive.md
 
