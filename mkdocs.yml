@@ -109,7 +109,7 @@ extra_css:
 nav:
   - Home: index.md
   - Lectures:
-    - PID Controllers: docs/pid-controllers.ipynb
+    - PID Controllers: pid-controllers.ipynb
 
 copyright: |
-  &copy; 2025 <a href="https://github.com/kks32-courses"  target="_blank" rel="noopener">Krishna Kumar</a>
+  &copy; 2025 <a href="https://github.com/ajthor"  target="_blank" rel="noopener">Adam Thorpe</a>
